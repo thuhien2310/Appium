@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ioAppiumSuite" verbose="1" >
+
+    <test name="SampleTest" >
+        <parameter name="from_airport" value="HAN" />
+        <parameter name="to_airport" value="PQC" />
+        <parameter name="from_date_add" value="3" />
+        <parameter name="to_date_add" value="5" />
+        <parameter name="adult_num" value="2" />
+        <parameter name="child_num" value="0" />
+        <parameter name="infant_num" value="0" />
+
+        <parameter name="from_airport_checkairlines" value="HAN" />
+        <parameter name="to_airport_checkairlines" value="SGN" />
+        <parameter name="from_date_checkairlines_add" value="4" />
+        <parameter name="to_date_checkairlines_add" value="7" />
+        <parameter name="adult_num_checkairlines" value="2" />
+        <parameter name="child_num_checkairlines" value="0" />
+        <parameter name="infant_num_checkairlines" value="0" />
+
+        <classes>
+            <class name="FlightTestCases" />
+        </classes>
+    </test>
+
+</suite>
